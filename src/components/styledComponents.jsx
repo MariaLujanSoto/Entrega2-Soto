@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import name from '../utils/products';
 
 //NavBar
 const Wrapper = styled.div`
@@ -21,7 +20,6 @@ const Center = styled.div`
 
 const MenuItem = styled.div`
     font-size: 15px;
-    cursor: pointer;
     margin-left: 25px;
 `;
 
@@ -30,20 +28,22 @@ const MenuItem = styled.div`
 const ProductAmountContainer = styled.div`
     display: flex;
     align-items: center;
-    margin: 20px;
-    flex-direction: column;
+   
     justify-content: center;
+    height:50px;
+    margin-bottom:30px;
 `;
 
 const ProductAmount = styled.div`
     font-size: 20px;
     margin: 5px;
+    color:red;
 `;
 
 
 //ItemList
 const ProductsContainer = styled.div`
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,14 +53,16 @@ const ProductsContainer = styled.div`
 
 //Item
 const Info = styled.div`
-    
-    width: 100%;
-    height: 100%;
+    border-radius:50px;
     position: absolute;
     z-index: 3;
-    align-items: center;
-    justify-content: center;
-    text-decoration:none;
+    display:flex;
+    
+
+    
+    
+    
+   
    
    
 `;
@@ -68,13 +70,13 @@ const Info = styled.div`
 const ProductContainer = styled.div`
     flex: 1;
     margin: 5px;
-    min-width: 280px;
+    min-width: 350px;
     height: 350px;
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 50px;
-    position: relative;
+    flex-direction: column
     
 `;
 
@@ -83,7 +85,6 @@ const Circle = styled.div`
     height: 200px;
     border-radius: 100%;
     
-   
 `;
 
 const Image = styled.img`
@@ -105,7 +106,6 @@ const Icon = styled.div`
     margin: 10px;
     transition: all 0.5s ease;
     &:hover {
-        background-color: grey;
         transform: scale(1.1);
        
     }
@@ -118,9 +118,15 @@ const DetailContainer = styled.div`
 `;
 
 const WrapperDetail = styled.div`
-    padding: 100px;
+    padding:50px;
+    
     display: flex;
     color: black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center
+
+    
 `;
 
 const ImgContainer = styled.div`
@@ -130,13 +136,13 @@ const ImgContainer = styled.div`
 
 const ImageDetail = styled.img`
     width: 100%;
-    height: 90vh;
+    height: 40vh;
     
 `;
 
 const InfoContainer = styled.div`
     flex: 1;
-    padding: 0px 50px;
+    padding: 0px 300px;
     
 `;
 
